@@ -6,6 +6,7 @@ import About from "../components/About";
 
 test("renders a <p> element with the bio from props", () => {
   render(<About bio="I made this" links={user.links} />);
+  console.log(`!!!! ` + screen.queryByText("I made this"));
   expect(screen.queryByText("I made this")).toBeInTheDocument();
 });
 

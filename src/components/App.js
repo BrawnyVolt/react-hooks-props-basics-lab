@@ -8,11 +8,16 @@ import user from "../data/user";
 console.log(user);
 
 function App() {
+  // console.log("first props",props);
   return (
     <div>
       <NavBar />
-      <Home />
-      <About />
+      <Home color={user.color} username={user.name} city={user.city} />
+      <About 
+      bio={user.bio} 
+      github={user.links.github}
+      linkedin={user.links.linkedin}
+        />
     </div>
   );
 }

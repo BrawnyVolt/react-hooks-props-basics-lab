@@ -1,5 +1,5 @@
 import React from "react";
-
+//color username city
 function Home(props) {
   return (
     <div id="home">
